@@ -94,10 +94,10 @@ h3 {
 
 .btn:disabled {
     cursor: not-allowed;
-    opacity: 1!important;
-    background: #eee!important;
-    border-color: #ddd!important;
-    color: #999!important;
+    opacity: 1 !important;
+    background: #eee !important;
+    border-color: #ddd !important;
+    color: #999 !important;
 }
 
 .btn:active {
@@ -149,7 +149,7 @@ h3 {
 
 .form-control input,
 .form-control select,
-.form-control textarea{
+.form-control textarea {
     font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
     margin: 0;
     outline: none;
@@ -227,7 +227,7 @@ h3 {
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 0;
-    transition: .22s all;
+    transition: 0.22s all;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -239,7 +239,7 @@ h3 {
 
 .alert {
     padding: 1rem 1.5rem;
-    border-left-width: .5rem;
+    border-left-width: 0.5rem;
     border-left-style: solid;
     margin: 1rem 0;
     position: relative;
@@ -270,7 +270,7 @@ h3 {
 .alert-title {
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: -.4rem;
+    margin-bottom: -0.4rem;
     color: #222;
 }
 
@@ -293,12 +293,8 @@ h3 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .35);
+    background: rgba(0, 0, 0, 0.35);
 }
-
-
-
-
 
 .loader {
     font-size: 10px;
@@ -308,11 +304,31 @@ h3 {
     height: 11em;
     border-radius: 50%;
     background: #ffffff;
-    background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-    background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-    background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-    background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -moz-linear-gradient(
+        left,
+        #ffffff 10%,
+        rgba(255, 255, 255, 0) 42%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        #ffffff 10%,
+        rgba(255, 255, 255, 0) 42%
+    );
+    background: -o-linear-gradient(
+        left,
+        #ffffff 10%,
+        rgba(255, 255, 255, 0) 42%
+    );
+    background: -ms-linear-gradient(
+        left,
+        #ffffff 10%,
+        rgba(255, 255, 255, 0) 42%
+    );
+    background: linear-gradient(
+        to right,
+        #ffffff 10%,
+        rgba(255, 255, 255, 0) 42%
+    );
     position: relative;
     -webkit-animation: load3 1.4s infinite linear;
     animation: load3 1.4s infinite linear;
@@ -394,7 +410,8 @@ h3 {
     text-decoration: none;
 }
 
-.navbar-menu li a:hover, .navbar-menu li a.active {
+.navbar-menu li a:hover,
+.navbar-menu li a.active {
     border-bottom: 2px solid #3eaf7c;
 }
 
@@ -408,7 +425,7 @@ h3 {
     font-size: 0.8rem;
     border: 1px solid #eee;
     border-radius: 15px;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
 }
 
 .badge.primary {
