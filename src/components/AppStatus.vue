@@ -6,7 +6,7 @@ export default {
   props: ['type'],
   computed: {
     activeClass () {
-      switch (this.props.type) {
+      switch (this.$props.type) {
         case 'done':
           return ''
         case 'active':
@@ -21,7 +21,7 @@ export default {
       }
     },
     activeStatusName () {
-      switch (this.props.type) {
+      switch (this.$props.type) {
         case 'done':
           return 'Выполнена'
         case 'active':
