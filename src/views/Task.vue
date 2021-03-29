@@ -24,20 +24,28 @@
 <script>
 import AppStatus from '../components/AppStatus'
 import { useStore } from 'vuex'
+import { onMounted, ref } from 'vue'
 export default {
   props: ['id'],
   setup (props) {
     const store = useStore()
-    // console.log(task)
+    const task = ref(null)
+
     function changeType (type) {
       store.dispatch('changeTaskType', {
         id: props.id,
         type
       })
     }
+    onMounted(() => {
+      store.dispatch('getTasks').then(() => {
+        task.value = store.getters.getTaskById(props.id)
+      })
+      console.log(store.getters.getAllTasks)
+    })
     return {
       changeType,
-      task: store.getters.getTaskById(props.id)
+      task
     }
   },
   components: { AppStatus }
